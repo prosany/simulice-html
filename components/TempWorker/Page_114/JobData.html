@@ -1,0 +1,72 @@
+<div class="container-md">
+    <div class="user__info">
+        <div class="page__title">
+            <h5>Data</h5>
+        </div>
+        <div class="row">
+            <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12">
+                <div class="user_basic_details">
+                    <!-- Job Title -->
+                    <label for="companyName">Name of Event:</label>
+                    <input type="text" name="companyName" style="width: 100%" id="surname" placeholder="Enter text...">
+                    <!-- Address -->
+                    <label for="street">Address:</label>
+                    <div class="user_address" style="width: 100%">
+                        <input type="text" name="street" id="street" placeholder="Street">
+                        <input type="text" name="zip" id="zip" placeholder="Zip">
+                        <input type="text" name="city" id="city" placeholder="City">
+                    </div>
+                    <!-- telephone -->
+                    <label for="telephone">Telephone:</label>
+                    <input type="tel" name="telephone" style="width: 100%" id="telephone" placeholder="Enter text...">
+                    <!-- Email -->
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" style="width: 100%" id="email" placeholder="Enter text...">
+                   <!-- Event Date -->
+                   <label for="eventDate">Event Date:</label>
+                   <input type="text" name="eventDate" style="width: 100%" id="eventDate" placeholder="Enter text...">
+                    <!-- Event Category -->
+                    <label for="">Event Category:</label>
+                    <select name="subCategory" style="width: 100%" class="select__new">
+                        <option checked>Choose One</option>
+                        <option value="1">Value One</option>
+                        <option value="2">Value Two</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12">
+                <div class="user__info">
+                    <div class="ads_post__active">
+                        <p>Boost your AD <br>
+                            7 days for 19,95€</p>
+                        <p><i class="fas fa-check-circle"></i></p>
+                        <button>BOOK NOW</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12">
+                <div class="ref_free_text">
+                    <textarea name="ref_free_text" id="ref_free_text" style="width: 100%" cols="70" rows="4">Job short description, Job long description, Company description & youtube video</textarea>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                <div class="upload_company_doc">
+                    <div class="img__one__company">
+                        <img src="../../../images/dummy_logo.jpg" alt="Image" />
+                        <img src="../../../images/dummy_logo.jpg" alt="Image" />
+                        <img src="../../../images/dummy_logo.jpg" alt="Image" />
+                        <img src="../../../images/dummy_logo.jpg" alt="Image" />
+                    </div>
+                    <div class="doc_upload_input">
+                        <label for="uploadImg" class="uploadLabel"><span><i class="fas fa-cloud-upload-alt"></i></span>Select File To Upload</label>
+                        <input type="file" id="uploadImg" />
+                    </div>
+                </div>
+                <button class="save__data">Save as draft</button>
+                <button class="save__data">Publish Job</button>
+            </div>
+        </div>
+    </div>
+</div>

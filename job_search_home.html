@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/simulice.css">
+    <link rel="stylesheet" href="./styles/simuliceNew.css">
+    <title>Simulice</title>
+</head>
+<body>
+    <!-- Header & Navbar -->
+    <header id="header_navbar"></header>
+    <main>
+        <div id="hero_with_map_4"></div>
+        <section id="job_search_4"></section>
+        <section id="job_detailed_search_4"></section>
+        <section id="top_job_ads_9"></section>
+        <section id="seo_text_9"></section>
+    </main>
+
+
+    <script src="https://kit.fontawesome.com/85066693d8.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./javaScript/simulice.js"></script>
+    <script>
+        $(function () {
+            $("#header_navbar").load("./component/nav_bar/navbar.html");
+            $("#hero_with_map_4").load("./component/page_4/hero_with_map/hero_with_map.html");
+            $("#job_search_4").load("./component/page_4/job_search/job_search.html");
+            $("#job_detailed_search_4").load("./component/page_4/job_detailed_search/job_detailed_search.html");
+            $("#top_job_ads_9").load("./component/page_9/top_job_ads/top_job_ads.html");
+            $("#seo_text_9").load("./component/page_9/seo_text/seo_text.html");
+        });
+    </script>
+</body>
+</html>

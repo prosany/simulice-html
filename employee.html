@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/simulice.css">
+    <title>Employee - Simulice</title>
+</head>
+<body>
+    <!-- Header & Navbar -->
+    <header id="header-navbar"></header>
+    <main>
+        <div id="hero-section"></div>
+        <section id="employeeJobSerarch_74"></section>
+        <section id="employeeSettings_80"></section>
+        <section id="publishJob_82"></section>
+        <section id="employeeSeletctCatagory_59"></section>
+        <section id="jobAds_59"></section>
+        <section id="seoText_59"></section>
+    </main>
+
+
+    <script src="https://kit.fontawesome.com/85066693d8.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./javaScript/simulice.js"></script>
+    <script>
+        $(function () {
+            $("#employeeJobSerarch_74").load("./components/employee/employeeJobSerarch_74/employeeJobPost.html");
+            $("#employeeSettings_80").load("./components/employee/employeeSettings_80/employeeSettings.html");
+            $("#publishJob_82").load("./components/employee/publishJob_82/publishJob.html");
+            $("#employeeSeletctCatagory_59").load("./components/employee/employeeSeletctCatagory_59/employeeSeletctCatagory.html");
+            $("#jobAds_59").load("./components/employee/jobAds_59/jobAds.html");
+            $("#seoText_59").load("./components/employee/seoText_59/seoText.html");
+        });
+    </script>
+</body>
+</html>

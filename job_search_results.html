@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles/simulice.css" />
+  <link rel="stylesheet" href="./styles/simuliceNew.css" />
+  <title>Simulice</title>
+  <style>
+    #more {
+      display: none;
+    }
+
+  </style>
+</head>
+<body>
+  <!-- Header & Navbar -->
+  <header id="header_navbar"></header>
+  <main>
+    <section id="job_search_31"></section>
+    <section id="search_filter_and_results_31"></section>
+  </main>
+
+  <script src="https://kit.fontawesome.com/85066693d8.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./javaScript/simulice.js"></script>
+  <script>
+    $(function () {
+      $("#header_navbar").load("./component/nav_bar/navbar.html");
+      $("#job_search_31").load("./component/page_31to38/job_search.html");
+      $("#search_filter_and_results_31").load(
+        "./component/page_31to38/search_filter_and_results.html"
+      );
+    });
+    function myFunction(value) {
+      var ambulance_work_more_text = document.getElementById(
+        "ambulance_work_more"
+      );
+      var ambulance_work_more_btnText = document.getElementById(
+        "ambulance_work_more_myBtn"
+      );
+      var ambulance_fact_more_text = document.getElementById(
+        "ambulance_fact_more"
+      );
+      var ambulance_fact_more_btnText = document.getElementById(
+        "ambulance_fact_more_myBtn"
+      );
+      var ambulance_mobility_more_text = document.getElementById(
+        "ambulance_mobility_more"
+      );
+      var ambulance_mobility_more_btnText = document.getElementById(
+        "ambulance_mobility_more_myBtn"
+      );
+
+      var fire_fact_more_text = document.getElementById("fire_fact_more");
+      var fire_fact_more_btnText = document.getElementById(
+        "fire_fact_more_myBtn"
+      );
+      var fire_mobility_more_text =
+        document.getElementById("fire_mobility_more");
+      var fire_mobility_more_btnText = document.getElementById(
+        "fire_mobility_more_myBtn"
+      );
+
+      var control_fact_more_text =
+        document.getElementById("control_fact_more");
+      var control_fact_more_btnText = document.getElementById(
+        "control_fact_more_myBtn"
+      );
+      var control_mobility_more_text = document.getElementById(
+        "control_mobility_more"
+      );
+      var control_mobility_more_btnText = document.getElementById(
+        "control_mobility_more_myBtn"
+      );
+
+      var other_fact_more_text = document.getElementById("other_fact_more");
+      var other_fact_more_btnText = document.getElementById(
+        "other_fact_more_myBtn"
+      );
+      var other_mobility_more_text = document.getElementById(
+        "other_mobility_more"
+      );
+      var other_mobility_more_btnText = document.getElementById(
+        "other_mobility_more_myBtn"
+      );
+
+      if (value === "ambulance_work_more") {
+        if (ambulance_work_more_text.style.display === "none") {
+          ambulance_work_more_btnText.innerHTML = "View less";
+          ambulance_work_more_text.style.display = "inline";
+        } else {
+          ambulance_work_more_btnText.innerHTML = "View more";
+          ambulance_work_more_text.style.display = "none";
+        }
+      } else if (value === "ambulance_fact_more") {
+        if (ambulance_fact_more_text.style.display === "none") {
+          ambulance_fact_more_btnText.innerHTML = "View less";
+          ambulance_fact_more_text.style.display = "inline";
+        } else {
+          ambulance_fact_more_btnText.innerHTML = "View more";
+          ambulance_fact_more_text.style.display = "none";
+        }
+      } else if (value === "ambulance_mobility_more") {
+        if (ambulance_mobility_more_text.style.display === "none") {
+          ambulance_mobility_more_btnText.innerHTML = "View less";
+          ambulance_mobility_more_text.style.display = "inline";
+        } else {
+          ambulance_mobility_more_btnText.innerHTML = "View more";
+          ambulance_mobility_more_text.style.display = "none";
+        }
+      } else if (value === "fire_fact_more") {
+        if (fire_fact_more_text.style.display === "none") {
+          fire_fact_more_btnText.innerHTML = "View less";
+          fire_fact_more_text.style.display = "inline";
+        } else {
+          fire_fact_more_btnText.innerHTML = "View more";
+          fire_fact_more_text.style.display = "none";
+        }
+      } else if (value === "fire_mobility_more") {
+        if (fire_mobility_more_text.style.display === "none") {
+          fire_mobility_more_btnText.innerHTML = "View less";
+          fire_mobility_more_text.style.display = "inline";
+        } else {
+          fire_mobility_more_btnText.innerHTML = "View more";
+          fire_mobility_more_text.style.display = "none";
+        }
+      } else if (value === "control_fact_more") {
+        if (control_fact_more_text.style.display === "none") {
+          control_fact_more_btnText.innerHTML = "View less";
+          control_fact_more_text.style.display = "inline";
+        } else {
+          control_fact_more_btnText.innerHTML = "View more";
+          control_fact_more_text.style.display = "none";
+        }
+      } else if (value === "control_mobility_more") {
+        if (control_mobility_more_text.style.display === "none") {
+          control_mobility_more_btnText.innerHTML = "View less";
+          control_mobility_more_text.style.display = "inline";
+        } else {
+          control_mobility_more_btnText.innerHTML = "View more";
+          control_mobility_more_text.style.display = "none";
+        }
+      } else if (value === "other_fact_more") {
+        if (other_fact_more_text.style.display === "none") {
+          other_fact_more_btnText.innerHTML = "View less";
+          other_fact_more_text.style.display = "inline";
+        } else {
+          other_fact_more_btnText.innerHTML = "View more";
+          other_fact_more_text.style.display = "none";
+        }
+      } else if (value === "other_mobility_more") {
+        if (other_mobility_more_text.style.display === "none") {
+          other_mobility_more_btnText.innerHTML = "View less";
+          other_mobility_more_text.style.display = "inline";
+        } else {
+          other_mobility_more_btnText.innerHTML = "View more";
+          other_mobility_more_text.style.display = "none";
+        }
+      }
+
+      // if (workmoreText.style.display === "none") {
+      //   workmorebtnText.innerHTML = "View less";
+      //   workmoreText.style.display = "inline";
+      // } else {
+      //   workmorebtnText.innerHTML = "View more";
+      //   workmoreText.style.display = "none";
+      // }
+    }
+  </script>
+</body>
+</html>
